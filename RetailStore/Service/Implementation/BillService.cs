@@ -124,7 +124,7 @@ namespace RetailStore.Service.Implementation
             }
             else
             {
-                throw new ApplicationException("There are no bill items in the bill.");
+                throw new ApplicationException($"There are no bill items for the product {barCode} in the bill.");
             }
 
             unitOfWork.BillRepository.Edit(bill);
